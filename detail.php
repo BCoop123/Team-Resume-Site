@@ -10,7 +10,7 @@ $resumes = [
 			'Header' => 
 		[
 				'Name' => 'Ben Acuff',
-				'Headshot' => 'assets/images/profile.jpg',
+				'Headshot' => 'assets/images/BenAProfile.jpg',
 				'Position' => 'Cybersecurity Analyst',
 				'Email' => 'acuffb1@mymail.nku.edu',
 				'Phone' => '(513) 371-4289',
@@ -118,13 +118,13 @@ $resumes = [
 		'Projects' =>
 		[
 			[
-				'Project_1_IMG' => "./assets/images/project1.jpg",
+				'Project_1_IMG' => "./assets/images/ArtificialIntelligence.jpg",
 				'Project_1_Title' => "Artificial Intelligence",
 				'Project_1_Desc' => "What is artifical intelligence?",
 				'Project_1_Link' => "https://docs.google.com/document/d/1JaqQTobGlJybkl7kMct9pRElvS3MKo89zFCyXw-GsMs/edit?usp=sharing",
 			],
 			[
-				'Project_1_IMG' => "./assets/images/project2.jpg",
+				'Project_1_IMG' => "./assets/images/MachineLearning.jpg",
 				'Project_1_Title' => "Machine Learning",
 				'Project_1_Desc' => "What is machine learning?",
 				'Project_1_Link' => "https://docs.google.com/document/d/1AvzpVbB8Icy7B_wtfKFRNJwUk-qZnsvp2iOMIwybh1I/edit?usp=sharing",
@@ -188,16 +188,16 @@ $resumes = [
 		'ProgressBarSkills' =>
 		[
 			[
-			'SkillName' => "Python",
-			'SkillProgress' => "94",
+			'Skill_1_Name' => "Python",
+			'Skill_1_Progress' => "94",
 			],
 			[
-			'SkillName' => "JavaScript",
-			'SkillProgress' => "96",
+			'Skill_2_Name' => "JavaScript",
+			'Skill_2_Progress' => "96",
 			],
 			[
-			'SkillName' => "Node.js",
-			'SkillProgress' => "92",
+			'Skill_3_Name' => "Node.js",
+			'Skill_3_Progress' => "92",
 			],
 		],
 		'OtherSkills' =>
@@ -222,12 +222,12 @@ $resumes = [
 		'Awards' =>
 		[
 			[
-			'AwardName' => "Outstanding Achievement in Cybersecurity Scholarship",
-			'AwardDesc' => "Recognized for exemplary performance and dedication in the field of cybersecurity, demonstrating a strong commitment to advancing knowledge and skills within the discipline.",
+			'Award_1_Name' => "Outstanding Achievement in Cybersecurity Scholarship",
+			'Award_1_Descr' => "Recognized for exemplary performance and dedication in the field of cybersecurity, demonstrating a strong commitment to advancing knowledge and skills within the discipline.",
 			],
 			[
-			'AwardName' => "Leadership Achievement Award",
-			'AwardDesc' => "Recognized for exceptional leadership qualities and achievements, showcasing the ability to inspire and guide others towards successful outcomes.",
+			'Award_2_Name' => "Leadership Achievement Award",
+			'Award_2_Descr' => "Recognized for exceptional leadership qualities and achievements, showcasing the ability to inspire and guide others towards successful outcomes.",
 			],
 		],
 		'Languages' =>
@@ -378,17 +378,24 @@ $resumes = [
 						    <div class="resume-section-content">
 						        <div class="resume-skill-item">
 							        <ul class="list-unstyled mb-4">
-										<?php
-											foreach ($resumes[$currentPage]['ProgressBarSkills'] as $key => $PBSkills) {
-												echo '
-												<li class="mb-2">
-													<div class="resume-skill-name">' . $PBSkills['SkillName'] . '</div>
-													<div class="progress resume-progress">
-														<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: ' . $PBSkills['SkillProgress'] . '%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-												</li>';
-											}
-										?>
+								        <li class="mb-2">
+								            <div class="resume-skill-name"><?=$resumes[$currentPage]['ProgressBarSkills']['Skill_1_Name'];?></div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: <?=$resumes[$currentPage]['ProgressBarSkills']['Skill_1_Progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name"><?=$resumes[$currentPage]['ProgressBarSkills']['Skill_2_Name'];?></div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: <?=$resumes[$currentPage]['ProgressBarSkills']['Skill_2_Progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name"><?=$resumes[$currentPage]['ProgressBarSkills']['Skill_3_Name'];?></div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: <?=$resumes[$currentPage]['ProgressBarSkills']['Skill_3_Progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
 							        </ul>
 						        </div><!--//resume-skill-item-->
 						        <div class="resume-skill-item">
@@ -411,17 +418,16 @@ $resumes = [
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
-									<?php
-										foreach ($resumes[$currentPage]['Education'] as $key => $EduRecord) {
-											echo '
-											<li class="mb-2">
-												<div class="resume-degree font-weight-bold">' . $EduRecord['Ed_Degree'] . '</div>
-												<div class="resume-degree-org">' . $EduRecord['Ed_Location'] . '</div>
-												<div class="resume-degree-time">' . $EduRecord['Ed_Time'] . '</div>
-											</li>
-											';
-										}
-									?>
+								    <li class="mb-2">
+								        <div class="resume-degree font-weight-bold">MSc in Computer Science</div>
+								        <div class="resume-degree-org">University College London</div>
+								        <div class="resume-degree-time">2013 - 2014</div>
+								    </li>
+								    <li>
+								        <div class="resume-degree font-weight-bold">BSc Maths and Physics</div>
+								        <div class="resume-degree-org">Imperial College London</div>
+								        <div class="resume-degree-time">2010 - 2013</div>
+								    </li>
 							    </ul>
 						    </div>
 					    </section><!--//education-section-->
@@ -429,17 +435,16 @@ $resumes = [
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled resume-awards-list">
-									<?php
-										foreach ($resumes[$currentPage]['Awards'] as $key => $Award) {
-											echo '
-											<li class="mb-2 ps-4 position-relative">
-											<i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-											<div class="resume-award-name">' . $Award['AwardName'] . '</div>
-											<div class="resume-award-desc">' . $Award['AwardDesc'] . '</div>
-										</li>
-											';
-										}
-									?>
+								    <li class="mb-2 ps-4 position-relative">
+								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name">Award Name Lorem</div>
+								        <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</div>
+								    </li>
+								    <li class="mb-0 ps-4 position-relative">
+								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name">Award Name Ipsum</div>
+								        <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque.</div>
+								    </li>
 							    </ul>
 						    </div>
 					    </section><!--//interests-section-->
@@ -510,7 +515,7 @@ $resumes = [
     
     <footer class="footer text-center pt-2 pb-5">
 	    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <?=$resumes[$currentPage]['Header']['Name'];?></small>
+        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by Your names</small>
     </footer>
 
     
