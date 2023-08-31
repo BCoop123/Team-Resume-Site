@@ -1,26 +1,118 @@
 <?php
 
+$currentPage = 0;
+
 $resumes = [
-	'BenMolloy' => 
 	[
-		'Title' => 'Ben Molloy\'s Resume',
+		'Title' => 
+			'Ben Molloy\'s Resume',
 		'Header' => 
 		[
-			'Name' => 'Ben Molloy',
-			'Headshot' => 'assets/images/profile.jpg',
-			'CurrentPosition' => 'Senior Network Analyst Manager',
-			'CurrentEmail' => 'btmolloy2@gmail.com',
-			'CurrentPhone' => '(513) 374-8989',
-			'CurrentLinkedIn' => 'https://www.linkedin.com/in/ben-molloy',
-			'CurrentGitHub' => 'https://www.github.com/btmolloy',
-			'CurrentWebSite' =>  'https://www.BenMolloy.com',
+				'Name' => 'Ben Molloy',
+				'Headshot' => 'assets/images/profile.jpg',
+				'Position' => 'Senior Network Analyst Manager',
+				'Email' => 'btmolloy2@gmail.com',
+				'Phone' => '(513) 374-8989',
+				'LinkedIn' => 'https://www.linkedin.com/in/ben-molloy',
+				'GitHub' => 'https://www.github.com/btmolloy',
+				'Website' =>  'https://www.BenMolloy.com',
+		],
+		'Summary' =>
+			'Current undergraduate majoring in cyber security at Northern Kentucky University with intermediate level knowledge of cyber security, communications, and critical thinking skills. I am eager for a challenge and looking for a full or part-time Co-op or internship to expand my skills while bringing value to my employer.',
+		'WorkExperience' =>
+		[
+			[
+				'Job_Title' => "Student Technology Support Specialist",
+				'Job_Location' => "Northern Kentucky University",
+				'Job_StartFinish' => "February 2022 - August 2023",
+				'Job_Descr' => "Diagnosed and resolved a range of hardware, software, and networking issues while delivering technical support and training to end-users.",
+				'Job_AchDescr' => "Completed many computer replacement projects and organizational type projects as well.",
+				'Job_Ach_1' => "Faculty Replacement Project",
+				'Job_Ach_2' => "Office Organization Project",
+				'Job_Ach_3' => "File System Organization",
+				'Job_Ach_4' => "Stuctured Windows AD configuration",
+				'Job_TechUsed_1' => "Bash",
+				'Job_TechUsed_2' => "Python",
+				'Job_TechUsed_3' => "Pixi",
+				'Job_TechUsed_4' => "Dell Command Manager",
+				'Job_TechUsed_5' => "UserStatus",
+			],
+			[
+				'Job_Title' => "IT Security Assistant",
+				'Job_Location' => "XYZ Tech Solutions",
+				'Job_StartFinish' => "June 2022 - August 2022",
+				'Job_Descr' => "Assisted in network monitoring, vulnerability assessment, and security automation, contributing to the enhancement of cybersecurity measures within the organization.",
+				'Job_AchDescr' => "Implemented automated scripts that streamlined security tasks, increasing operational efficiency by reducing manual effort and saving approximately 10 hours per week.",
+				'Job_Ach_1' => "Faculty Replacement Project",
+				'Job_Ach_2' => "Office Organization Project",
+				'Job_Ach_3' => "File System Organization",
+				'Job_Ach_4' => "Stuctured Windows AD configuration",
+				'Job_TechUsed_1' => "Wireshark",
+				'Job_TechUsed_2' => "Nmap",
+				'Job_TechUsed_3' => "Metasploit",
+				'Job_TechUsed_4' => "Python",
+				'Job_TechUsed_5' => "Bash",
+			]
+		],
+		'ProgressBarSkills' =>
+		[
+			'Skill_1_Name' => "Python",
+			'Skill_1_Progress' => "94",
+			'Skill_2_Name' => "JavaScript",
+			'Skill_2_Progress' => "96",
+			'Skill_3_Name' => "Node.js",
+			'Skill_3_Progress' => "92",
+		],
+		'OtherSkills' =>
+		[
+			'Other_Skill_1' => "DevOps",
+			'Other_Skill_2' => "Teamwork/Communication",
+			'Other_Skill_3' => "Git",
+			'Other_Skill_4' => "Problem Solving & Critical Thinking",
+			'Other_Skill_5' => "Work Well Under Pressure",
+			'Other_Skill_6' => "Familiar with VMware and VM setup",
+			'Other_Skill_7' => "Fundamental Malware Analysis",
+			'Other_Skill_8' => "Web Development",
+		],
+		'Education' =>
+		[
+			'Ed_Degree' => "BSc CyberSecurity",
+			'Ed_Location' => "Northern Kentucky University",
+			'Ed_Time' => "2020 - Present",
+		],
+		'Awards' =>
+		[
+			'Award_1_Name' => "Outstanding Achievement in Cybersecurity Scholarship",
+			'Award_1_Descr' => "Recognized for exemplary performance and dedication in the field of cybersecurity, demonstrating a strong commitment to advancing knowledge and skills within the discipline.",
+			'Award_2_Name' => "Leadership Achievement Award",
+			'Award_2_Descr' => "Recognized for exceptional leadership qualities and achievements, showcasing the ability to inspire and guide others towards successful outcomes.",
+		],
+		'Languages' =>
+		[
+			'Lang_1' => "Python",
+			'Lang_2' => "Java",
+			'Lang_3' => "Bash",
+		],
+		'Interests' =>
+		[
+			'Interest_1' => "Boldering",
+			'Interest_2' => "Working Out",
+			'Interest_3' => "Video Games",
+		],
+		'Projects' =>
+		[
+			'Project' =>
+			[
+				'Project_1_IMG' => "./assets/images/project1.jpg",
+				'Project_1_Title' => "CodeOptimize: Performance Tuning Project",
+				'Project_1_Desc' => "The CodeOptimize project revolved around fine-tuning code for optimal execution, implementing efficiency-driven techniques, and profiling to enhance software speed and resource utilization.",
+				'Project_1_Link' => "https://www.codeoptimize-example.com",
+			]
 		]
 	],
-	'BrandonCooper' =>
 	[
 
 	],
-	'BenA' =>
 	[
 
 	]
@@ -30,13 +122,13 @@ $resumes = [
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title><?=$resumes['BenMolloy']['Title'];?></title>
+    <title><?=$resumes[$currentPage]['Title'];?></title>
     
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?=$resumes['BenMolloy']['Title'];?>">
+    <meta name="description" content="<?=$resumes[$currentPage]['Title'];?>">
     <meta name="author" content="Your name">    
     <link rel="shortcut icon" href="favicon.ico"> 
     
@@ -65,18 +157,18 @@ $resumes = [
 				    <div class="col">
 					    <div class="row p-4 justify-content-center justify-content-md-between">
 						    <div class="primary-info col-auto">
-							    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase"><?=$resumes['BenMolloy']['Header']['Name'];?></h1>
-							    <div class="title mb-3">Your desired job title</div>
+							    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase"><?=$resumes[$currentPage]['Header']['Name'];?></h1>
+							    <div class="title mb-3"><?=$resumes[$currentPage]['Header']['Position'];?></div>
 							    <ul class="list-unstyled">
-								    <li class="mb-2"><a class="text-link" href="#"><i class="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i>your@email.com</a></li>
-								    <li><a class="text-link" href="#"><i class="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i>0123 456 78900</a></li>
+								    <li class="mb-2"><a class="text-link" href="#"><i class="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i><?=$resumes[$currentPage]['Header']['Email'];?></li>
+								    <li><a class="text-link" href="#"><i class="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i><?=$resumes[$currentPage]['Header']['Phone'];?></a></li>
 							    </ul>
 						    </div><!--//primary-info-->
 						    <div class="secondary-info col-auto mt-2">
 							    <ul class="resume-social list-unstyled">
-					                <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/yourlink</a></li>
-					                <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span>github.com/yourhandle</a></li>
-					                <li><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fas fa-globe"></i></span>yourwebsite.com</a></li>
+					                <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span><?=$resumes[$currentPage]['Header']['LinkedIn'];?></a></li>
+					                <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span><?=$resumes[$currentPage]['Header']['GitHub'];?></a></li>
+					                <li><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fas fa-globe"></i></span><?=$resumes[$currentPage]['Header']['Website'];?></a></li>
 							    </ul>
 						    </div><!--//secondary-info-->
 					    </div><!--//row-->
@@ -88,7 +180,7 @@ $resumes = [
 			    <section class="resume-section summary-section mb-5">
 				    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Summary</h2>
 				    <div class="resume-section-content">
-					    <p class="mb-0">Summarise your education and professional experience here. Add a couple of fun facts. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue elit ut nisi vehicula iaculis. Integer porta nisi erat, quis gravida quam dignissim ut. Nullam tincidunt mollis finibus. Vestibulum et diam vel tellus blandit convallis non id mauris. Curabitur feugiat tincidunt ante, ut iaculis sem. Sed eleifend fringilla diam, quis vehicula tellus fringilla sed. In sagittis commodo ipsum pulvinar sagittis. Ut et turpis sit amet erat elementum convallis ac eu ipsum. Aenean varius eget mi in mollis. Integer tempus diam libero, id blandit neque aliquam non. Maecenas eleifend leo ut pellentesque bibendum. Phasellus consectetur facilisis nunc, at ultricies nisi eleifend eget. Fusce molestie et orci non pulvinar. Aenean ac tristique orci, vitae viverra mi.</p>
+					    <p class="mb-0"><?=$resumes[$currentPage]['Summary'];?></p>
 				    </div>
 			    </section><!--//summary-section-->
 			    <div class="row">
@@ -97,37 +189,41 @@ $resumes = [
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
 						    <div class="resume-section-content">
 							    <div class="resume-timeline position-relative">
-								    <article class="resume-timeline-item position-relative pb-5">
-									    
-									    <div class="resume-timeline-item-header mb-2">
-										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1">Lead Developer</h3>
-										        <div class="resume-company-name ms-auto">Startup Hub</div>
-										    </div><!--//row-->
-										    <div class="resume-position-time">2023 - Present</div>
-									    </div><!--//resume-timeline-item-header-->
-									    <div class="resume-timeline-item-desc">
-										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-										    <p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-										    <ul>
-											    <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-											    <li>At vero eos et accusamus et iusto odio dignissimos.</li>
-											    <li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
-											    <li>Maecenas tempus tellus eget.</li>
-										    </ul>
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-										    <ul class="list-inline">
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Angular</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Python</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">jQuery</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Webpack</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">HTML/SASS</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">PostgresSQL</span></li>
-										    </ul>
-									    </div><!--//resume-timeline-item-desc-->
+								    
+									<?php
+										foreach ($resumes[$currentPage]['WorkExperience'] as $key => $Job) {
+											echo '										<article class="resume-timeline-item position-relative pb-5">
+											
+											<div class="resume-timeline-item-header mb-2">
+												<div class="d-flex flex-column flex-md-row">
+													<h3 class="resume-position-title font-weight-bold mb-1">' . $Job['Job_Title'] . '</h3>
+													<div class="resume-company-name ms-auto">' . $Job['Job_Location'] . '</div>
+												</div><!--//row-->
+												<div class="resume-position-time">' . $Job['Job_StartFinish'] . '</div>
+											</div><!--//resume-timeline-item-header-->
+											<div class="resume-timeline-item-desc">
+												<p>' . $Job['Job_Descr'] . '</h4>
+												<p>' . $Job['Job_AchDescr'] . '</p>
+												<ul>
+													<li>' . $Job['Job_Ach_1'] . '</li>
+													<li>' . $Job['Job_Ach_2'] . '</li>
+													<li>' . $Job['Job_Ach_3'] . '</li>
+													<li>' . $Job['Job_Ach_4'] . '</li>
+												</ul>
+												<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+												<ul class="list-inline">
+													<li class="list-inline-item"><span class="badge bg-secondary badge-pill">' . $Job['Job_TechUsed_1'] . '</span></li>
+													<li class="list-inline-item"><span class="badge bg-secondary badge-pill">' . $Job['Job_TechUsed_2'] . '</span></li>
+													<li class="list-inline-item"><span class="badge bg-secondary badge-pill">' . $Job['Job_TechUsed_3'] . '</span></li>
+													<li class="list-inline-item"><span class="badge bg-secondary badge-pill">' . $Job['Job_TechUsed_4'] . '</span></li>
+													<li class="list-inline-item"><span class="badge bg-secondary badge-pill">' . $Job['Job_TechUsed_5'] . '</span></li>
+												</ul>
+											</div><!--//resume-timeline-item-desc-->
 
-								    </article><!--//resume-timeline-item-->
+										</article><!--//resume-timeline-item-->';
+										}
+
+									?>
 								         
 							    </div><!--//resume-timeline-->
 							    
@@ -146,34 +242,21 @@ $resumes = [
 						        <div class="resume-skill-item">
 							        <ul class="list-unstyled mb-4">
 								        <li class="mb-2">
-								            <div class="resume-skill-name">Angular</div>
+								            <div class="resume-skill-name"><?=$resumes[$currentPage]['ProgressBarSkills']['Skill_1_Name'];?></div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 98%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: <?=$resumes[$currentPage]['ProgressBarSkills']['Skill_1_Progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 								        <li class="mb-2">
-								            <div class="resume-skill-name">React</div>
+								            <div class="resume-skill-name"><?=$resumes[$currentPage]['ProgressBarSkills']['Skill_2_Name'];?></div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 94%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: <?=$resumes[$currentPage]['ProgressBarSkills']['Skill_2_Progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 								        <li class="mb-2">
-								            <div class="resume-skill-name">JavaScript</div>
+								            <div class="resume-skill-name"><?=$resumes[$currentPage]['ProgressBarSkills']['Skill_3_Name'];?></div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        
-								        <li class="mb-2">
-								            <div class="resume-skill-name">Node.js</div>
-									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li class="mb-2">
-								            <div class="resume-skill-name">HTML/CSS/SASS/LESS</div>
-									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: <?=$resumes[$currentPage]['ProgressBarSkills']['Skill_3_Progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 							        </ul>
