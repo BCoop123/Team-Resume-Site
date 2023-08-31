@@ -6,7 +6,8 @@ $resumes = [
 	[
 		'Title' => 
 			'Ben Molloy\'s Resume',
-		'Header' => 
+		
+			'Header' => 
 		[
 				'Name' => 'Ben Molloy',
 				'Headshot' => 'assets/images/profile.jpg',
@@ -17,9 +18,11 @@ $resumes = [
 				'GitHub' => 'https://www.github.com/btmolloy',
 				'Website' =>  'https://www.BenMolloy.com',
 		],
+		
 		'Summary' =>
 			'Current undergraduate majoring in cyber security at Northern Kentucky University with intermediate level knowledge of cyber security, communications, and critical thinking skills. I am eager for a challenge and looking for a full or part-time Co-op or internship to expand my skills while bringing value to my employer.',
-		'WorkExperience' =>
+		
+			'WorkExperience' =>
 		[
 			[
 				'Job_Title' => "Student Technology Support Specialist",
@@ -56,12 +59,18 @@ $resumes = [
 		],
 		'ProgressBarSkills' =>
 		[
+			[
 			'Skill_1_Name' => "Python",
 			'Skill_1_Progress' => "94",
+			],
+			[
 			'Skill_2_Name' => "JavaScript",
 			'Skill_2_Progress' => "96",
+			],
+			[
 			'Skill_3_Name' => "Node.js",
 			'Skill_3_Progress' => "92",
+			],
 		],
 		'OtherSkills' =>
 		[
@@ -76,16 +85,22 @@ $resumes = [
 		],
 		'Education' =>
 		[
+			[
 			'Ed_Degree' => "BSc CyberSecurity",
 			'Ed_Location' => "Northern Kentucky University",
 			'Ed_Time' => "2020 - Present",
+			],
 		],
 		'Awards' =>
 		[
+			[
 			'Award_1_Name' => "Outstanding Achievement in Cybersecurity Scholarship",
 			'Award_1_Descr' => "Recognized for exemplary performance and dedication in the field of cybersecurity, demonstrating a strong commitment to advancing knowledge and skills within the discipline.",
+			],
+			[
 			'Award_2_Name' => "Leadership Achievement Award",
 			'Award_2_Descr' => "Recognized for exceptional leadership qualities and achievements, showcasing the ability to inspire and guide others towards successful outcomes.",
+			],
 		],
 		'Languages' =>
 		[
