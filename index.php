@@ -1,6 +1,6 @@
 <?php
 	$members = [
-		'tabIcon' => 'bbb.png',
+		'tabIcon' => 'assets/images/bbb.png',
 		'pageTitle' => 'Team BBB',
 		'pageFooter' => 'Ben Molloy, Brandon Cooper, Ben Acuff',
 		'memberInfo' => 
