@@ -5,7 +5,7 @@ $currentPage = 2;
 $resumes = [
 
 	[
-		'tabIcon' => 'bbb.png',
+		'tabIcon' => 'assets/images/bbb.png',
 		'Title' => 'Ben Molloy\'s Resume',
 		
 		
