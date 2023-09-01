@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< Updated upstream
-$currentPage = 1;
-=======
-$currentPage = 0;
->>>>>>> Stashed changes
+$currentPage = 2;
 
 $resumes = [
 
@@ -22,6 +18,7 @@ $resumes = [
 				'LinkedIn' => 'https://www.linkedin.com/in/ben-molloy',
 				'GitHub' => 'https://www.github.com/btmolloy',
 				'Website' =>  'https://www.BenMolloy.com',
+				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 		],
 		
 		'Summary' =>
@@ -158,27 +155,29 @@ $resumes = [
 		'Projects' =>
 		[
 			[
-				'Project_1_IMG' => "./assets/images/BenMProject1.jpg",
-				'Project_1_Title' => "CodeOptimize: Performance Tuning Project",
-				'Project_1_Desc' => "The CodeOptimize project revolved around fine-tuning code for optimal execution, implementing efficiency-driven techniques, and profiling to enhance software speed and resource utilization.",
-				'Project_1_Link' => "https://www.codeoptimize-example.com",
+				'ProjectIMG' => "./assets/images/BenMProject1.jpg",
+				'ProjectTitle' => "CodeOptimize: Performance Tuning Project",
+				'ProjectDesc' => "The CodeOptimize project revolved around fine-tuning code for optimal execution, implementing efficiency-driven techniques, and profiling to enhance software speed and resource utilization.",
+				'ProjectLink' => "https://www.codeoptimize-example.com",
+				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 			],
 			[
-				'Project_1_IMG' => "./assets/images/BenMProject2.jpg",
-				'Project_1_Title' => "CodeCraft Enhancement Project",
-				'Project_1_Desc' => "The CodeCraft Enhancement Project focused on refining and optimizing existing codebase, introducing automation solutions to streamline processes and enhance overall software performance.",
-				'Project_1_Link' => "https://www.codecraft-enhancement.com",
+				'ProjectIMG' => "./assets/images/BenMProject2.jpg",
+				'ProjectTitle' => "CodeCraft Enhancement Project",
+				'ProjectDesc' => "The CodeCraft Enhancement Project focused on refining and optimizing existing codebase, introducing automation solutions to streamline processes and enhance overall software performance.",
+				'ProjectLink' => "https://www.codecraft-enhancement.com",
+				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 			],
 			[
-				'Project_1_IMG' => "./assets/images/BenMProject3.jpg",
-				'Project_1_Title' => "Project ServerForge",
-				'Project_1_Desc' => "Project ServerForge involved the meticulous design, assembly, and configuration of a robust server infrastructure, ensuring optimal performance, scalability, and reliability to meet the organization's data processing needs.",
-				'Project_1_Link' => "https://www.serverforge-example.com",
+				'ProjectIMG' => "./assets/images/BenMProject3.jpg",
+				'ProjectTitle' => "Project ServerForge",
+				'ProjectDesc' => "Project ServerForge involved the meticulous design, assembly, and configuration of a robust server infrastructure, ensuring optimal performance, scalability, and reliability to meet the organization's data processing needs.",
+				'ProjectLink' => "https://www.serverforge-example.com",
+				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 			],			
 		]
-<<<<<<< Updated upstream
 		],
-	[
+	  [
 		'Title' => 
 			'Ben Acuff\'s Resume',
 		
@@ -192,6 +191,7 @@ $resumes = [
 				'LinkedIn' => 'https://www.linkedin.com/in/benjaminacuff',
 				'GitHub' => 'https://www.github.com/benjaminacuff',
 				'Website' =>  'https://www.benacuff.com',
+				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 		],
 		
 		'Summary' =>
@@ -293,23 +293,158 @@ $resumes = [
 		'Projects' =>
 		[
 			[
-				'Project_1_IMG' => "./assets/images/ArtificialIntelligence.jpg",
-				'Project_1_Title' => "Artificial Intelligence",
-				'Project_1_Desc' => "What is artifical intelligence?",
-				'Project_1_Link' => "https://docs.google.com/document/d/1JaqQTobGlJybkl7kMct9pRElvS3MKo89zFCyXw-GsMs/edit?usp=sharing",
+				'ProjectIMG' => "./assets/images/ArtificialIntelligence.jpg",
+				'ProjectTitle' => "Artificial Intelligence",
+				'ProjectDesc' => "What is artifical intelligence?",
+				'ProjectLink' => "https://docs.google.com/document/d/1JaqQTobGlJybkl7kMct9pRElvS3MKo89zFCyXw-GsMs/edit?usp=sharing",
+				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 			],
 			[
-				'Project_1_IMG' => "./assets/images/MachineLearning.jpg",
-				'Project_1_Title' => "Machine Learning",
-				'Project_1_Desc' => "What is machine learning?",
-				'Project_1_Link' => "https://docs.google.com/document/d/1AvzpVbB8Icy7B_wtfKFRNJwUk-qZnsvp2iOMIwybh1I/edit?usp=sharing",
+				'ProjectIMG' => "./assets/images/MachineLearning.jpg",
+				'ProjectTitle' => "Machine Learning",
+				'ProjectDesc' => "What is machine learning?",
+				'ProjectLink' => "https://docs.google.com/document/d/1AvzpVbB8Icy7B_wtfKFRNJwUk-qZnsvp2iOMIwybh1I/edit?usp=sharing",
+				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 			]
 		]
 	],
 	[
+		'Title' => 
+		'Brandon\'s Resume',
+	
+		'Header' => 
+	[
+			'Name' => 'Brandon Cooper',
+			'Headshot' => 'assets/images/Brandon.jpg',
+			'Position' => 'Associate Data Developer/Analyst',
+			'Email' => 'brandoncooper859@gmail.com',
+			'Phone' => '859-628-8871',
+			'LinkedIn' => 'www.linkedin.com/in/brandon-cooper-0',
+			'GitHub' => 'https://github.com/BCoop123',
+			'Website' =>  'https://bcoop123.com',
+			'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+	],
+	
+	'Summary' =>
+		'I am a college student pursuing a degree in Computer Information Technology. My studies are currently focused on Web Server and Database Administration. I am proficient in Windows and UNIX Systems. I enjoy scripting and am adept in Python and Java. I have experience in Oracle SQL Developer, SQL*Plus, and Apache Web Server. I am currently seeking internship opportunities in my chosen field.',
+	
+		'WorkExperience' =>
+	[
+		[
+			'Job_Title' => "Data Management Intern",
+			'Job_Location' => "MassMutual Ascend",
+			'Job_StartFinish' => "2023 - Present",
+			'Job_Descr' => "In my role, I actively participated in every phase of designing complex data storage components according to given specifications. My tasks were not just limited to routine development but also encompassed moderately intricate maintenance and resolving issues with our data warehouse systems.",
+			'Job_AchDescr' => "During my internship I worked on many projects within the Data Warehouse and worked collaborativly with all members of my team.",
+			'Job_Ach_1' => "I played an active role in the development and maintenance of relational databases used for data storage and mining.",
+			'Job_Ach_2' => "I was responsible for designing and testing the data warehouse systems.",
+			'Job_Ach_3' => "I routinely troubleshooted and resolved any issues related to data load and data retrieval.",
+			'Job_Ach_4' => "I diligently maintained documentation relating to operations, data warehouse objects, and source systems.",
+			'Job_TechUsed_1' => "SQL",
+			'Job_TechUsed_2' => "TransactSQL",
+			'Job_TechUsed_3' => "SQL Server Management Studio",
+			'Job_TechUsed_4' => "SSIS",
+			'Job_TechUsed_5' => "JAMS",
+		],
+		[
+			'Job_Title' => "Pit Gate Security",
+			'Job_Location' => "Florence Speedway Inc.",
+			'Job_StartFinish' => "2017 - Present",
+			'Job_Descr' => "In my role, I ensured all payments were made before entry. I checked coolers for compliance with our guidelines. I welcomed spectators and drivers. I also monitored traffic to prevent unauthorized access, keeping the premises secure.",
+			'Job_AchDescr' => "Achievements:",
+			'Job_Ach_1' => "During my time in this role, I saved the track thousands by stopping non-paying customers from entering into the pit area. I have also prevented possible incidents related to alchohol consumption in high traffic areas.",
+			'Job_Ach_2' => "Oracle SQL Certified",
+			'Job_Ach_3' => "Debugging Award",
+			'Job_Ach_4' => "Employee of the month: April 2022 and October 2022",
+			'Job_TechUsed_1' => "Diligance",
+			'Job_TechUsed_2' => "Customer Relations",
+			'Job_TechUsed_3' => "Greeter",
+			'Job_TechUsed_4' => "HTML",
+			'Job_TechUsed_5' => "SASS",
+		]
+	],
+	'ProgressBarSkills' =>
+	[
+		[
+		'SkillName' => "SQL",
+		'SkillProgress' => "91",
+		],
+		[
+		'SkillName' => "JavaScript",
+		'SkillProgress' => "98",
+		],
+		[
+		'SkillName' => "Python",
+		'SkillProgress' => "89",
+		],
+	],
+	'OtherSkills' =>
+	[
+		'Other_Skill_1' => "DevOps",
+		'Other_Skill_2' => "Code Review",
+		'Other_Skill_3' => "Git",
+		'Other_Skill_4' => "Unit Testing",
+		'Other_Skill_5' => "Agile",
+		'Other_Skill_6' => "Scrum",
+		'Other_Skill_7' => "Web Dev",
+		'Other_Skill_8' => "Java",
+	],
+	'Education' =>
+	[
+		[
+		'Ed_Degree' => "BSc in Computer Information Technology",
+		'Ed_Location' => "Northern Kentucky University",
+		'Ed_Time' => "2020 - 2023",
+		],
+	],
+	'Awards' =>
+	[
+		[
+		'AwardName' => "Dean's List",
+		'AwardDesc' => "Issued by Northern Kentucky University.",
+		],
+		[
+		'AwardName' => "Outstanding Freshman Award",
+		'AwardDesc' => "Issued by Northern Kentucky University.",
+		],
+	],
+	'Languages' =>
+	[
+		'Lang_1' => "Java",
+		'Lang_2' => "C++",
+		'Lang_3' => "PHP",
+	],
+	'Interests' =>
+	[
+		'Interest_1' => "Hiking",
+		'Interest_2' => "Online Gaming",
+		'Interest_3' => "Grilling",
+	],
+	'Projects' =>
+	[
+		[
+			'ProjectIMG' => "./assets/images/bbb.png",
+			'ProjectTitle' => "BBB Music Site",
+			'ProjectDesc' => "Social media site where users post about songs, artists, and albums.",
+			'ProjectLink' => "https://github.com/BCoop123/BBB-Music-Site",
+			'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+		],
+		[
+			'ProjectIMG' => "./assets/images/dog.png",
+			'ProjectTitle' => "Animal Shelter Site",
+			'ProjectDesc' => "Javascript powered website for an animal shelter.",
+			'ProjectLink' => "https://bcoop123.github.io/ASE_220_Assignment_2/",
+			'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+		],
+		[
+			'ProjectIMG' => "./assets/images/unity.png",
+			'ProjectTitle' => "Unity Driving Simulation",
+			'ProjectDesc' => "Game created as a part of the Unity create with code course.",
+			'ProjectLink' => "https://github.com/BCoop123/Unity-Driving-Simulation",
+			'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+		]
+	]
 
-=======
->>>>>>> Stashed changes
 	]
 ]
 
@@ -361,15 +496,19 @@ $resumes = [
 						    </div><!--//primary-info-->
 						    <div class="secondary-info col-auto mt-2">
 							    <ul class="resume-social list-unstyled">
-<<<<<<< Updated upstream
+
 					                <li class="mb-3"><a class="text-link" href="<?=$resumes[$currentPage]['Header']['LinkedIn'];?>"><span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span><?=$resumes[$currentPage]['Header']['LinkedIn'];?></a></li>
 					                <li class="mb-3"><a class="text-link" href="<?=$resumes[$currentPage]['Header']['GitHub'];?>"><span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span><?=$resumes[$currentPage]['Header']['GitHub'];?></a></li>
 					                <li><a class="text-link" href="<?=$resumes[$currentPage]['Header']['Website'];?>"><span class="fa-container text-center me-2"><i class="fas fa-globe"></i></span><?=$resumes[$currentPage]['Header']['Website'];?></a></li>
-=======
+
 					                <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span><?=$resumes[$currentPage]['Header']['LinkedIn'];?></a></li>
 					                <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span><?=$resumes[$currentPage]['Header']['GitHub'];?></a></li>
 					                <li><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fas fa-globe"></i></span><?=$resumes[$currentPage]['Header']['Website'];?></a></li>
->>>>>>> Stashed changes
+
+					                <li class="mb-3"><a class="text-link" href="<?=$resumes[$currentPage]['Header']['RickRoll'];?>" target="_blank"><span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span><?=$resumes[$currentPage]['Header']['LinkedIn'];?></a></li>
+					                <li class="mb-3"><a class="text-link" href="<?=$resumes[$currentPage]['Header']['RickRoll'];?>" target="_blank"><span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span><?=$resumes[$currentPage]['Header']['GitHub'];?></a></li>
+					                <li><a class="text-link" href="<?=$resumes[$currentPage]['Header']['RickRoll'];?>" target="_blank"><span class="fa-container text-center me-2"><i class="fas fa-globe"></i></span><?=$resumes[$currentPage]['Header']['Website'];?></a></li>
+
 							    </ul>
 						    </div><!--//secondary-info-->
 					    </div><!--//row-->
@@ -540,44 +679,43 @@ $resumes = [
 					<div class="row mt-4">
 						<div class="col-md-4">
 							<div class="card">
-<<<<<<< Updated upstream
 								<img src="<?=$resumes[$currentPage]['Projects'][0]['Project_1_IMG'];?>" alt="Project 1" class="card-img-top">
 								<div class="card-body">
 									<h5 class="card-title"><?=$resumes[$currentPage]['Projects'][0]['Project_1_Title'];?></h5>
 									<p class="card-text"><?=$resumes[$currentPage]['Projects'][0]['Project_1_Desc'];?></p>
 									<a href="btn btn-outline-primary" href="<?=$resumes[$currentPage]['Projects'][0]['Project_1_Link'];?>"><?=$resumes[$currentPage]['Projects'][0]['Project_1_Link'];?></a>
-=======
-								<img src="path-to-project-image1.jpg" alt="Project 1" class="card-img-top">
-								<div class="card-body">
-									<h5 class="card-title">Project 1</h5>
-									<p class="card-text">Brief description of Project 1.</p>
-									<a href="btn btn-outline-primary" href="#">Go to link</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="card">
-								<img src="path-to-project-image2.jpg" alt="Project 2" class="card-img-top">
-								<div class="card-body">
-									<h5 class="card-title">Project 2</h5>
-									<p class="card-text">Brief description of Project 2.</p>
-									<a href="btn btn-outline-primary" href="#">Go to link</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="card">
-								<img src="path-to-project-image3.jpg" alt="Project 3" class="card-img-top">
-								<div class="card-body">
-									<h5 class="card-title">Project 3</h5>
-									<p class="card-text">Brief description of Project 3.</p>
-									<a href="btn btn-outline-primary" href="#">Go to link</a>
->>>>>>> Stashed changes
 								</div>
 							</div>
 						</div>
 					</div>
 				</section><!--//projects-section-->
+
+					<?php
+						$projects = $resumes[$currentPage]['Projects'];
+						foreach ($projects as $key => $Project) {
+							if ($key % 3 == 0) {
+								echo '<div class="row mt-4">';
+							}
+
+							echo '
+								<div class="col-md-4">
+									<div class="card">
+										<img src="' . $Project['ProjectIMG'] . '" alt="Project 1" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">' . $Project['ProjectTitle'] . '</h5>
+											<p class="card-text">' . $Project['ProjectDesc'] . '</p>
+											<a class="btn btn-outline-primary" href="' . $Project['RickRoll'] . '" target="_blank">Go to link</a>
+										</div>
+									</div>
+								</div>';
+
+							// End the row if it's the 3rd, 6th, 9th, etc. card or the last card
+							if (($key + 1) % 3 == 0 || $key == count($projects) - 1) {
+								echo '</div>';
+							}
+						}
+					?>
+			</section>
 		    </div><!--//resume-body-->
 		    
 		    
