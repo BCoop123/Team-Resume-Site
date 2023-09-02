@@ -65,13 +65,11 @@
 										<div class="primary-info col-auto">
 											<h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">' . $userInfo['name'] . '</h1>
 											<div class="title mb-3">' . $userInfo['role'] . '</div>
-	
 											<a href="detail.php?index='. $userInfo['link'] .'" class="btn btn-secondary">See full profile</a>
 										</div><!--//primary-info-->
 										<div class="secondary-info col-auto mt-2">
 										</div><!--//secondary-info-->
 									</div><!--//row-->
-									
 								</div><!--//col-->
 							</div><!--//row-->
 						</header>';
