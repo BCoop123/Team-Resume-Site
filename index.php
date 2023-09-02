@@ -7,7 +7,7 @@
 		[
 			[
 				'name' => 'Brandon Cooper',
-				'headshot' => 'assets/images/BrandonCProfile.jpg',
+				'headshot' => 'assets/images/Brandon.jpg',
 				'role' => 'Wizard Coder',
 				'link' => '2',
 			],

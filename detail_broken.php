@@ -1,13 +1,15 @@
 <?php
 
-$currentPage = $_GET['index'];
+$currentPage = 2;
 
 $resumes = [
+
 	[
 		'tabIcon' => 'assets/images/bbb.png',
 		'Title' => 'Ben Molloy\'s Resume',
 		
-		'Header' => 
+		
+			'Header' => 
 		[
 				'Name' => 'Ben Molloy',
 				'Headshot' => 'assets/images/BenMProfile.jpg',
@@ -19,12 +21,11 @@ $resumes = [
 				'Website' =>  'https://www.BenMolloy.com',
 				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 		],
-
-		'Summary' =>
-			'Current undergraduate majoring in cyber security at Northern Kentucky University with intermediate level knowledge of cyber security, communications, and critical thinking skills. I am eager for a challenge and looking for a full or part-time Co-op or internship to expand my skills while bringing value to my employer.'
-		,
 		
-		'WorkExperience' =>
+		'Summary' =>
+			'Current undergraduate majoring in cyber security at Northern Kentucky University with intermediate level knowledge of cyber security, communications, and critical thinking skills. I am eager for a challenge and looking for a full or part-time Co-op or internship to expand my skills while bringing value to my employer.',
+		
+			'WorkExperience' =>
 		[
 			[
 				'Job_Title' => "Student Technology Support Specialist",
@@ -94,20 +95,20 @@ $resumes = [
 		'ProgressBarSkills' =>
 		[
 			[
-			'SkillName' => "Python",
-			'SkillProgress' => "94",
+			'Skill_1_Name' => "Python",
+			'Skill_1_Progress' => "94",
 			],
 			[
-			'SkillName' => "JavaScript",
-			'SkillProgress' => "96",
+			'Skill_2_Name' => "JavaScript",
+			'Skill_2_Progress' => "96",
 			],
 			[
-			'SkillName' => "Node.js",
-			'SkillProgress' => "92",
+			'Skill_3_Name' => "Node.js",
+			'Skill_3_Progress' => "92",
 			],
 			[
-			'SkillName' => "PHP",
-			'SkillProgress' => "90",
+			'Skill_4_Name' => "PHP",
+			'Skill_4_Progress' => "90",
 			],
 		],
 		'OtherSkills' =>
@@ -132,12 +133,12 @@ $resumes = [
 		'Awards' =>
 		[
 			[
-			'AwardName' => "Outstanding Achievement in Cybersecurity Scholarship",
-			'AwardDesc' => "Recognized for exemplary performance and dedication in the field of cybersecurity, demonstrating a strong commitment to advancing knowledge and skills within the discipline.",
+			'Award_1_Name' => "Outstanding Achievement in Cybersecurity Scholarship",
+			'Award_1_Descr' => "Recognized for exemplary performance and dedication in the field of cybersecurity, demonstrating a strong commitment to advancing knowledge and skills within the discipline.",
 			],
 			[
-			'AwardName' => "Leadership Achievement Award",
-			'AwardDesc' => "Recognized for exceptional leadership qualities and achievements, showcasing the ability to inspire and guide others towards successful outcomes.",
+			'Award_2_Name' => "Leadership Achievement Award",
+			'Award_2_Descr' => "Recognized for exceptional leadership qualities and achievements, showcasing the ability to inspire and guide others towards successful outcomes.",
 			],
 		],
 		'Languages' =>
@@ -176,12 +177,12 @@ $resumes = [
 				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 			],			
 		]
-	],
-	[
-		'tabIcon' => './assets/images/bbb.png',
-		'Title' => 'Ben Acuff\'s Resume',
+		],
+	  [
+		'Title' => 
+			'Ben Acuff\'s Resume',
 		
-		'Header' => 
+			'Header' => 
 		[
 				'Name' => 'Ben Acuff',
 				'Headshot' => 'assets/images/BenAProfile.jpg',
@@ -195,10 +196,10 @@ $resumes = [
 		],
 		
 		'Summary' =>
-			'I am currently am a junior attending Northern Kentucky University. My major is cybersecurity, while my minor is computer science.'
-		,
+			'I am currently am a junior attending Northern Kentucky University. My major is cybersecurity, while my minor is computer science.',
+		'WorkExperience',
 		
-		'WorkExperience' =>
+			'WorkExperience' =>
 		[
 			[
 				'Job_Title' => "Web Developer",
@@ -309,11 +310,11 @@ $resumes = [
 		]
 	],
 	[
-		'tabIcon' => './assets/images/bbb.png',
-		'Title' => 'Brandon\'s Resume',
+		'Title' => 
+		'Brandon\'s Resume',
 	
 		'Header' => 
-		[
+	[
 			'Name' => 'Brandon Cooper',
 			'Headshot' => 'assets/images/Brandon.jpg',
 			'Position' => 'Associate Data Developer/Analyst',
@@ -323,133 +324,132 @@ $resumes = [
 			'GitHub' => 'https://github.com/BCoop123',
 			'Website' =>  'https://bcoop123.com',
 			'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-		],
+	],
 	
-		'Summary' =>
-			'I am a college student pursuing a degree in Computer Information Technology. My studies are currently focused on Web Server and Database Administration. I am proficient in Windows and UNIX Systems. I enjoy scripting and am adept in Python and Java. I have experience in Oracle SQL Developer, SQL*Plus, and Apache Web Server. I am currently seeking internship opportunities in my chosen field.'
-		,
+	'Summary' =>
+		'I am a college student pursuing a degree in Computer Information Technology. My studies are currently focused on Web Server and Database Administration. I am proficient in Windows and UNIX Systems. I enjoy scripting and am adept in Python and Java. I have experience in Oracle SQL Developer, SQL*Plus, and Apache Web Server. I am currently seeking internship opportunities in my chosen field.',
 	
 		'WorkExperience' =>
+	[
 		[
-			[
-				'Job_Title' => "Data Management Intern",
-				'Job_Location' => "MassMutual Ascend",
-				'Job_StartFinish' => "2023 - Present",
-				'Job_Descr' => "In my role, I actively participated in every phase of designing complex data storage components according to given specifications. My tasks were not just limited to routine development but also encompassed moderately intricate maintenance and resolving issues with our data warehouse systems.",
-				'Job_AchDescr' => "During my internship I worked on many projects within the Data Warehouse and worked collaborativly with all members of my team.",
-				'Job_Ach_1' => "I played an active role in the development and maintenance of relational databases used for data storage and mining.",
-				'Job_Ach_2' => "I was responsible for designing and testing the data warehouse systems.",
-				'Job_Ach_3' => "I routinely troubleshooted and resolved any issues related to data load and data retrieval.",
-				'Job_Ach_4' => "I diligently maintained documentation relating to operations, data warehouse objects, and source systems.",
-				'Job_TechUsed_1' => "SQL",
-				'Job_TechUsed_2' => "TransactSQL",
-				'Job_TechUsed_3' => "SQL Server Management Studio",
-				'Job_TechUsed_4' => "SSIS",
-				'Job_TechUsed_5' => "JAMS",
-			],
-			[
-				'Job_Title' => "Pit Gate Security",
-				'Job_Location' => "Florence Speedway Inc.",
-				'Job_StartFinish' => "2017 - Present",
-				'Job_Descr' => "In my role, I ensured all payments were made before entry. I checked coolers for compliance with our guidelines. I welcomed spectators and drivers. I also monitored traffic to prevent unauthorized access, keeping the premises secure.",
-				'Job_AchDescr' => "Achievements:",
-				'Job_Ach_1' => "During my time in this role, I saved the track thousands by stopping non-paying customers from entering into the pit area. I have also prevented possible incidents related to alchohol consumption in high traffic areas.",
-				'Job_Ach_2' => "Oracle SQL Certified",
-				'Job_Ach_3' => "Debugging Award",
-				'Job_Ach_4' => "Employee of the month: April 2022 and October 2022",
-				'Job_TechUsed_1' => "Diligance",
-				'Job_TechUsed_2' => "Customer Relations",
-				'Job_TechUsed_3' => "Greeter",
-				'Job_TechUsed_4' => "HTML",
-				'Job_TechUsed_5' => "SASS",
-			]
+			'Job_Title' => "Data Management Intern",
+			'Job_Location' => "MassMutual Ascend",
+			'Job_StartFinish' => "2023 - Present",
+			'Job_Descr' => "In my role, I actively participated in every phase of designing complex data storage components according to given specifications. My tasks were not just limited to routine development but also encompassed moderately intricate maintenance and resolving issues with our data warehouse systems.",
+			'Job_AchDescr' => "During my internship I worked on many projects within the Data Warehouse and worked collaborativly with all members of my team.",
+			'Job_Ach_1' => "I played an active role in the development and maintenance of relational databases used for data storage and mining.",
+			'Job_Ach_2' => "I was responsible for designing and testing the data warehouse systems.",
+			'Job_Ach_3' => "I routinely troubleshooted and resolved any issues related to data load and data retrieval.",
+			'Job_Ach_4' => "I diligently maintained documentation relating to operations, data warehouse objects, and source systems.",
+			'Job_TechUsed_1' => "SQL",
+			'Job_TechUsed_2' => "TransactSQL",
+			'Job_TechUsed_3' => "SQL Server Management Studio",
+			'Job_TechUsed_4' => "SSIS",
+			'Job_TechUsed_5' => "JAMS",
 		],
-		'ProgressBarSkills' =>
 		[
-			[
-			'SkillName' => "SQL",
-			'SkillProgress' => "91",
-			],
-			[
-			'SkillName' => "JavaScript",
-			'SkillProgress' => "98",
-			],
-			[
-			'SkillName' => "Python",
-			'SkillProgress' => "89",
-			],
-		],
-		'OtherSkills' =>
-		[
-			'Other_Skill_1' => "DevOps",
-			'Other_Skill_2' => "Code Review",
-			'Other_Skill_3' => "Git",
-			'Other_Skill_4' => "Unit Testing",
-			'Other_Skill_5' => "Agile",
-			'Other_Skill_6' => "Scrum",
-			'Other_Skill_7' => "Web Dev",
-			'Other_Skill_8' => "Java",
-		],
-		'Education' =>
-		[
-			[
-			'Ed_Degree' => "BSc in Computer Information Technology",
-			'Ed_Location' => "Northern Kentucky University",
-			'Ed_Time' => "2020 - 2023",
-			],
-		],
-		'Awards' =>
-		[
-			[
-			'AwardName' => "Dean's List",
-			'AwardDesc' => "Issued by Northern Kentucky University.",
-			],
-			[
-			'AwardName' => "Outstanding Freshman Award",
-			'AwardDesc' => "Issued by Northern Kentucky University.",
-			],
-		],
-		'Languages' =>
-		[
-			'Lang_1' => "Java",
-			'Lang_2' => "C++",
-			'Lang_3' => "PHP",
-		],
-		'Interests' =>
-		[
-			'Interest_1' => "Hiking",
-			'Interest_2' => "Online Gaming",
-			'Interest_3' => "Grilling",
-		],
-		'Projects' =>
-		[
-			[
-				'ProjectIMG' => "./assets/images/bbb.png",
-				'ProjectTitle' => "BBB Music Site",
-				'ProjectDesc' => "Social media site where users post about songs, artists, and albums.",
-				'ProjectLink' => "https://github.com/BCoop123/BBB-Music-Site",
-				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-			],
-			[
-				'ProjectIMG' => "./assets/images/dog.png",
-				'ProjectTitle' => "Animal Shelter Site",
-				'ProjectDesc' => "Javascript powered website for an animal shelter.",
-				'ProjectLink' => "https://bcoop123.github.io/ASE_220_Assignment_2/",
-				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-			],
-			[
-				'ProjectIMG' => "./assets/images/unity.png",
-				'ProjectTitle' => "Unity Driving Simulation",
-				'ProjectDesc' => "Game created as a part of the Unity create with code course.",
-				'ProjectLink' => "https://github.com/BCoop123/Unity-Driving-Simulation",
-				'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-			]
+			'Job_Title' => "Pit Gate Security",
+			'Job_Location' => "Florence Speedway Inc.",
+			'Job_StartFinish' => "2017 - Present",
+			'Job_Descr' => "In my role, I ensured all payments were made before entry. I checked coolers for compliance with our guidelines. I welcomed spectators and drivers. I also monitored traffic to prevent unauthorized access, keeping the premises secure.",
+			'Job_AchDescr' => "Achievements:",
+			'Job_Ach_1' => "During my time in this role, I saved the track thousands by stopping non-paying customers from entering into the pit area. I have also prevented possible incidents related to alchohol consumption in high traffic areas.",
+			'Job_Ach_2' => "Oracle SQL Certified",
+			'Job_Ach_3' => "Debugging Award",
+			'Job_Ach_4' => "Employee of the month: April 2022 and October 2022",
+			'Job_TechUsed_1' => "Diligance",
+			'Job_TechUsed_2' => "Customer Relations",
+			'Job_TechUsed_3' => "Greeter",
+			'Job_TechUsed_4' => "HTML",
+			'Job_TechUsed_5' => "SASS",
 		]
+	],
+	'ProgressBarSkills' =>
+	[
+		[
+		'SkillName' => "SQL",
+		'SkillProgress' => "91",
+		],
+		[
+		'SkillName' => "JavaScript",
+		'SkillProgress' => "98",
+		],
+		[
+		'SkillName' => "Python",
+		'SkillProgress' => "89",
+		],
+	],
+	'OtherSkills' =>
+	[
+		'Other_Skill_1' => "DevOps",
+		'Other_Skill_2' => "Code Review",
+		'Other_Skill_3' => "Git",
+		'Other_Skill_4' => "Unit Testing",
+		'Other_Skill_5' => "Agile",
+		'Other_Skill_6' => "Scrum",
+		'Other_Skill_7' => "Web Dev",
+		'Other_Skill_8' => "Java",
+	],
+	'Education' =>
+	[
+		[
+		'Ed_Degree' => "BSc in Computer Information Technology",
+		'Ed_Location' => "Northern Kentucky University",
+		'Ed_Time' => "2020 - 2023",
+		],
+	],
+	'Awards' =>
+	[
+		[
+		'AwardName' => "Dean's List",
+		'AwardDesc' => "Issued by Northern Kentucky University.",
+		],
+		[
+		'AwardName' => "Outstanding Freshman Award",
+		'AwardDesc' => "Issued by Northern Kentucky University.",
+		],
+	],
+	'Languages' =>
+	[
+		'Lang_1' => "Java",
+		'Lang_2' => "C++",
+		'Lang_3' => "PHP",
+	],
+	'Interests' =>
+	[
+		'Interest_1' => "Hiking",
+		'Interest_2' => "Online Gaming",
+		'Interest_3' => "Grilling",
+	],
+	'Projects' =>
+	[
+		[
+			'ProjectIMG' => "./assets/images/bbb.png",
+			'ProjectTitle' => "BBB Music Site",
+			'ProjectDesc' => "Social media site where users post about songs, artists, and albums.",
+			'ProjectLink' => "https://github.com/BCoop123/BBB-Music-Site",
+			'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+		],
+		[
+			'ProjectIMG' => "./assets/images/dog.png",
+			'ProjectTitle' => "Animal Shelter Site",
+			'ProjectDesc' => "Javascript powered website for an animal shelter.",
+			'ProjectLink' => "https://bcoop123.github.io/ASE_220_Assignment_2/",
+			'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+		],
+		[
+			'ProjectIMG' => "./assets/images/unity.png",
+			'ProjectTitle' => "Unity Driving Simulation",
+			'ProjectDesc' => "Game created as a part of the Unity create with code course.",
+			'ProjectLink' => "https://github.com/BCoop123/Unity-Driving-Simulation",
+			'RickRoll' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+		]
+	]
+
 	]
 ]
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
@@ -461,7 +461,7 @@ $resumes = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?=$resumes[$currentPage]['Title'];?>">
     <meta name="author" content="Your name">    
-    <link rel="shortcut icon" href="<?=$resumes[$currentPage]['tabIcon'];?>"> 
+    <link rel="shortcut icon" href="<?=$resumes['tabIcon']?>"> 
     
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
@@ -483,7 +483,7 @@ $resumes = [
 		    <header class="resume-header pt-4 pt-md-0">
 			    <div class="row">
 				    <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
-				        <img class="picture" src="<?=$resumes[$currentPage]['Header']['Headshot'];?>" alt="">
+				        <img class="picture" src="assets/images/profile.jpg" alt="">
 				    </div><!--//col-->
 				    <div class="col">
 					    <div class="row p-4 justify-content-center justify-content-md-between">
@@ -491,15 +491,25 @@ $resumes = [
 							    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase"><?=$resumes[$currentPage]['Header']['Name'];?></h1>
 							    <div class="title mb-3"><?=$resumes[$currentPage]['Header']['Position'];?></div>
 							    <ul class="list-unstyled">
-								    <li class="mb-2"><a class="text-link" href="mailto:<?=$resumes[$currentPage]['Header']['Email'];?>"><i class="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i><?=$resumes[$currentPage]['Header']['Email'];?></li>
-								    <li><a class="text-link" href="tel:<?=$resumes[$currentPage]['Header']['Phone'];?>"><i class="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i><?=$resumes[$currentPage]['Header']['Phone'];?></a></li>
+								    <li class="mb-2"><a class="text-link" href="#"><i class="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i><?=$resumes[$currentPage]['Header']['Email'];?></li>
+								    <li><a class="text-link" href="#"><i class="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i><?=$resumes[$currentPage]['Header']['Phone'];?></a></li>
 							    </ul>
 						    </div><!--//primary-info-->
 						    <div class="secondary-info col-auto mt-2">
 							    <ul class="resume-social list-unstyled">
+
+					                <li class="mb-3"><a class="text-link" href="<?=$resumes[$currentPage]['Header']['LinkedIn'];?>"><span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span><?=$resumes[$currentPage]['Header']['LinkedIn'];?></a></li>
+					                <li class="mb-3"><a class="text-link" href="<?=$resumes[$currentPage]['Header']['GitHub'];?>"><span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span><?=$resumes[$currentPage]['Header']['GitHub'];?></a></li>
+					                <li><a class="text-link" href="<?=$resumes[$currentPage]['Header']['Website'];?>"><span class="fa-container text-center me-2"><i class="fas fa-globe"></i></span><?=$resumes[$currentPage]['Header']['Website'];?></a></li>
+
+					                <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span><?=$resumes[$currentPage]['Header']['LinkedIn'];?></a></li>
+					                <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span><?=$resumes[$currentPage]['Header']['GitHub'];?></a></li>
+					                <li><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fas fa-globe"></i></span><?=$resumes[$currentPage]['Header']['Website'];?></a></li>
+
 					                <li class="mb-3"><a class="text-link" href="<?=$resumes[$currentPage]['Header']['RickRoll'];?>" target="_blank"><span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span><?=$resumes[$currentPage]['Header']['LinkedIn'];?></a></li>
 					                <li class="mb-3"><a class="text-link" href="<?=$resumes[$currentPage]['Header']['RickRoll'];?>" target="_blank"><span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span><?=$resumes[$currentPage]['Header']['GitHub'];?></a></li>
 					                <li><a class="text-link" href="<?=$resumes[$currentPage]['Header']['RickRoll'];?>" target="_blank"><span class="fa-container text-center me-2"><i class="fas fa-globe"></i></span><?=$resumes[$currentPage]['Header']['Website'];?></a></li>
+
 							    </ul>
 						    </div><!--//secondary-info-->
 					    </div><!--//row-->
@@ -572,30 +582,38 @@ $resumes = [
 						    <div class="resume-section-content">
 						        <div class="resume-skill-item">
 							        <ul class="list-unstyled mb-4">
-										<?php
-											foreach ($resumes[$currentPage]['ProgressBarSkills'] as $key => $PBSkills) {
-												echo '
-												<li class="mb-2">
-													<div class="resume-skill-name">' . $PBSkills['SkillName'] . '</div>
-													<div class="progress resume-progress">
-														<div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: ' . $PBSkills['SkillProgress'] . '%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-													</div>
-												</li>';
-											}
-										?>
+								        <li class="mb-2">
+								            <div class="resume-skill-name"><?=$resumes[$currentPage]['ProgressBarSkills']['Skill_1_Name'];?></div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: <?=$resumes[$currentPage]['ProgressBarSkills']['Skill_1_Progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name"><?=$resumes[$currentPage]['ProgressBarSkills']['Skill_2_Name'];?></div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: <?=$resumes[$currentPage]['ProgressBarSkills']['Skill_2_Progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+								        <li class="mb-2">
+								            <div class="resume-skill-name"><?=$resumes[$currentPage]['ProgressBarSkills']['Skill_3_Name'];?></div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: <?=$resumes[$currentPage]['ProgressBarSkills']['Skill_3_Progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
 							        </ul>
 						        </div><!--//resume-skill-item-->
 						        <div class="resume-skill-item">
 						            <h4 class="resume-skills-cat font-weight-bold">Others</h4>
 						            <ul class="list-inline">
-							            <li class="list-inline-item"><span class="badge badge-light"><?=$resumes[$currentPage]['OtherSkills']['Other_Skill_1'];?></span></li>
-							            <li class="list-inline-item"><span class="badge badge-light"><?=$resumes[$currentPage]['OtherSkills']['Other_Skill_2'];?></span></li>
-							            <li class="list-inline-item"><span class="badge badge-light"><?=$resumes[$currentPage]['OtherSkills']['Other_Skill_3'];?></span></li>
-							            <li class="list-inline-item"><span class="badge badge-light"><?=$resumes[$currentPage]['OtherSkills']['Other_Skill_4'];?></span></li>
-							            <li class="list-inline-item"><span class="badge badge-light"><?=$resumes[$currentPage]['OtherSkills']['Other_Skill_5'];?></span></li>
-							            <li class="list-inline-item"><span class="badge badge-light"><?=$resumes[$currentPage]['OtherSkills']['Other_Skill_6'];?></span></li>
-							            <li class="list-inline-item"><span class="badge badge-light"><?=$resumes[$currentPage]['OtherSkills']['Other_Skill_7'];?></span></li>
-							            <li class="list-inline-item"><span class="badge badge-light"><?=$resumes[$currentPage]['OtherSkills']['Other_Skill_8'];?></span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">DevOps</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Code Review</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Git</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Unit Testing</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Wireframing</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Sketch</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Balsamiq</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">WordPress</span></li>
+							            <li class="list-inline-item"><span class="badge badge-light">Shopify</span></li>
 						            </ul>
 						        </div><!--//resume-skill-item-->
 						    </div><!--resume-section-content-->
@@ -604,17 +622,16 @@ $resumes = [
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
-									<?php
-										foreach ($resumes[$currentPage]['Education'] as $key => $EduRecord) {
-											echo '
-											<li class="mb-2">
-												<div class="resume-degree font-weight-bold">' . $EduRecord['Ed_Degree'] . '</div>
-												<div class="resume-degree-org">' . $EduRecord['Ed_Location'] . '</div>
-												<div class="resume-degree-time">' . $EduRecord['Ed_Time'] . '</div>
-											</li>
-											';
-										}
-									?>
+								    <li class="mb-2">
+								        <div class="resume-degree font-weight-bold">MSc in Computer Science</div>
+								        <div class="resume-degree-org">University College London</div>
+								        <div class="resume-degree-time">2013 - 2014</div>
+								    </li>
+								    <li>
+								        <div class="resume-degree font-weight-bold">BSc Maths and Physics</div>
+								        <div class="resume-degree-org">Imperial College London</div>
+								        <div class="resume-degree-time">2010 - 2013</div>
+								    </li>
 							    </ul>
 						    </div>
 					    </section><!--//education-section-->
@@ -622,17 +639,16 @@ $resumes = [
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled resume-awards-list">
-									<?php
-										foreach ($resumes[$currentPage]['Awards'] as $key => $Award) {
-											echo '
-											<li class="mb-2 ps-4 position-relative">
-											<i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-											<div class="resume-award-name">' . $Award['AwardName'] . '</div>
-											<div class="resume-award-desc">' . $Award['AwardDesc'] . '</div>
-										</li>
-											';
-										}
-									?>
+								    <li class="mb-2 ps-4 position-relative">
+								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name">Award Name Lorem</div>
+								        <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</div>
+								    </li>
+								    <li class="mb-0 ps-4 position-relative">
+								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+								        <div class="resume-award-name">Award Name Ipsum</div>
+								        <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque.</div>
+								    </li>
 							    </ul>
 						    </div>
 					    </section><!--//interests-section-->
@@ -640,9 +656,9 @@ $resumes = [
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Languages</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled resume-lang-list">
-								    <li class="mb-2"><span class="resume-lang-name font-weight-bold"><?=$resumes[$currentPage]['Languages']['Lang_1'];?></span> <small class="text-muted font-weight-normal">(Native)</small></li>
-								    <li class="mb-2 align-middle"><span class="resume-lang-name font-weight-bold"><?=$resumes[$currentPage]['Languages']['Lang_2'];?></span> <small class="text-muted font-weight-normal">(Professional)</small></li>
-								    <li><span class="resume-lang-name font-weight-bold"><?=$resumes[$currentPage]['Languages']['Lang_3'];?></span> <small class="text-muted font-weight-normal">(Professional)</small></li>
+								    <li class="mb-2"><span class="resume-lang-name font-weight-bold">English</span> <small class="text-muted font-weight-normal">(Native)</small></li>
+								    <li class="mb-2 align-middle"><span class="resume-lang-name font-weight-bold">French</span> <small class="text-muted font-weight-normal">(Professional)</small></li>
+								    <li><span class="resume-lang-name font-weight-bold">Spanish</span> <small class="text-muted font-weight-normal">(Professional)</small></li>
 							    </ul>
 						    </div>
 					    </section><!--//language-section-->
@@ -650,16 +666,31 @@ $resumes = [
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
-								    <li class="mb-1"><?=$resumes[$currentPage]['Interests']['Interest_1'];?></li>
-								    <li class="mb-1"><?=$resumes[$currentPage]['Interests']['Interest_2'];?></li>
-								    <li class="mb-1"><?=$resumes[$currentPage]['Interests']['Interest_3'];?></li>
+								    <li class="mb-1">Climbing</li>
+								    <li class="mb-1">Snowboarding</li>
+								    <li class="mb-1">Cooking</li>
 							    </ul>
 						    </div>
 					    </section><!--//interests-section-->
+					    
 				    </div>
 			    </div><!--//row-->
 				<section class="resume-section experience-section mb-5">
 					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Projects</h2>
+					<div class="row mt-4">
+						<div class="col-md-4">
+							<div class="card">
+								<img src="<?=$resumes[$currentPage]['Projects'][0]['Project_1_IMG'];?>" alt="Project 1" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title"><?=$resumes[$currentPage]['Projects'][0]['Project_1_Title'];?></h5>
+									<p class="card-text"><?=$resumes[$currentPage]['Projects'][0]['Project_1_Desc'];?></p>
+									<a href="btn btn-outline-primary" href="<?=$resumes[$currentPage]['Projects'][0]['Project_1_Link'];?>"><?=$resumes[$currentPage]['Projects'][0]['Project_1_Link'];?></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!--//projects-section-->
+
 					<?php
 						$projects = $resumes[$currentPage]['Projects'];
 						foreach ($projects as $key => $Project) {
@@ -695,8 +726,10 @@ $resumes = [
     
     <footer class="footer text-center pt-2 pb-5">
 	    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <?=$resumes[$currentPage]['Header']['Name'];?></small>
+        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by Your names</small>
     </footer>
+
+    
 
 </body>
 </html> 
